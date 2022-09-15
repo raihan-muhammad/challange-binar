@@ -263,16 +263,119 @@ nav .icon-menu {
 
 
 @media screen and (max-width: 500px){
+    header {
+        padding-left: 16px;
+    }
+    nav {
+        padding-right: 16px;
+        margin-bottom: 32px;
+    }
     nav ul {
         display: none;
     }
     nav .icon-menu {
         display: block;
     }
-    .hero, .services {
+    .hero, 
+    .services, 
+    .why-us .wrapper-card {
         flex-direction: column;
     }
-    .hero .img-hero img, .services {
+    .hero .img-hero img, 
+    .services {
         width: 100%;
     }
+
+    .hero .text p {
+        font-size: 14px;
+        width: 95%;
+        margin: 16px 0;
+    }
+    
+    .hero .img-hero {
+        margin-top: 24px;
+    }
+
+    .services {
+        margin-top: 60px;
+    }
+
+    .services .services-hero {
+        margin: auto;
+    }
+
+    .services .services-hero img {
+        width: 252px;
+    }
+
+    .services .services-text {
+        padding: 0 16px;
+    }
+
+    .services .services-text h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    .why-us {
+        margin: 62px 16px 0 16px;
+    }
+    
+    .why-us > h1, 
+    .why-us > p {
+        text-align: center;
+    }
+
+    .why-us > h1 {
+        margin: 16px 0;
+    }
+    .why-us > p {
+        font-size: 14px;
+    }
+
+    .why-us .wrapper-card {
+        margin-top: 24px;
+    }
+
+    .why-us .wrapper-card .card {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+
+    .why-us .wrapper-card .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .testimonial {
+        margin-top: 60px;
+    }
+
+    .testimonial > h1 {
+        font-size: 24px;
+        margin: 16px 0;
+    }
+
+    .testimonial > p {
+        font-size: 14px;
+    }
+
+    .testimonial .slide:not(:last-child) {
+        display: none;
+    }
+    
+    .testimonial .slide:last-child {
+        width: 100%;
+        margin-right: 0;
+        flex-direction: column;
+    }
+
+    .testimonial .wrapper-slide {
+        margin-left: 0;
+        padding: 0 16px;
+    }
+
 }
