@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+    font-size: 10px;
+}
+
+header {
+    background-color: #F1F3FF;
+    padding-top: 24px;
+}
+
+/* SECTION NAVBAR */
+
+nav {
+    height: 36px;
+    display: flex;
+    margin: 0 136px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 14px;
+}
+
+nav ul li {
+    margin-right: 32px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    color: salmon;
+} 
+
+nav ul li:last-child a {
+    background: #5CB85F;
+    padding: 8px 12px;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+nav .icon-menu {
+    display: none;
+}
+
+/* END SECTION NAVBAR */
+
+/* SECTION HERO */
+
+.hero {
+    /* padding-left: 136px; */
+    display: flex;
+    padding-top: 36px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.hero .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .text h1 {
+    font-size: 36px;
+    margin: 0;
+    margin-top: -50px;
+    line-height: 150%;
+}
+
+.hero .text p {
+    font-weight:300;
+    width: 468px;
+    line-height: 20px;
+}
+
+.hero .text button {
+    width: 140px;
+    height: 36px;
+    background: #5CB85F;
+    border-radius: 2px;
+    color: #fff;
+    border: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* END SECTION HERO */
+
+/* SECTION SERVICES */
+
+.services {
+    width: 1027px;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    margin-top: 104px;
+}
+
+.services .services-hero {
+    margin-right: 100px;
+}
+
+.services .services-text {
+    margin-top: 10px;
+}
+
+.services .services-text h1 {
+    line-height: 36px;
+}
+
+.services .services-text p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.services .services-text div {
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.services .services-text p {
+    margin: 0;
+}
+
+.services .services-text img {
+    margin-right: 16px;
+}
+
+/* END SECTION SERVICES */
+
+/* SECTION WHY US */
+
+.why-us {
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.why-us h1 {
+    font-size: 24px;
+}
+
+.why-us p {
+    font-weight: 300;
+}
+
+.why-us .wrapper-card {
+    display: flex;
+    margin-top: 40px;
+}
+
+.why-us .wrapper-card .card {
+    padding: 24px;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    margin-right: 32px;
+    width: 268px;
+}
+
+.why-us .wrapper-card .card h1 {
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.why-us .wrapper-card .card p {
+    line-height: 20px;
+}
+
+/* END SECTION WHY US */
+
+/* SECTION TESTIMONIAL */
+
+.testimonial {
+    margin: 100px auto;
+    max-width: 1450px;
+    overflow-x: hidden;
+}
+
+.testimonial > h1, .testimonial > p {
+    text-align: center;
+}
+
+.testimonial > p {
+    font-weight: 300;
+}
+
+.testimonial .wrapper-slide {
+    display: flex;
+    margin-top: 40px;
+    width: fit-content;
+    margin-left: -300px;
+}
+
+.testimonial .wrapper-slide .slide {
+    width: 618px;
+    border-radius: 8px;
+    background: #F1F3FF;
+    padding: 68px 32px 68px 46px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.testimonial .wrapper-slide .slide .img-slide {
+    margin-right: 46px;
+}
+
+.testimonial .wrapper-slide .slide .text-slide p {
+    margin: 8px 0;
+    font-weight: 300;
+    line-height: 20px;
+    width: 95%;
+}
+
+.testimonial .wrapper-slide .slide .text-slide .text-name {
+    font-weight: 400;
+}
+
+.testimonial .wrap-arrow {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.testimonial .wrap-arrow div {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.testimonial .wrap-arrow div:first-child {
+    border: 1px solid #c4c4c4;
+    margin-right: 37.5px;
+}
+
+.testimonial .wrap-arrow div:last-child {
+    background-color: #5CB85F;
+}
+
+.testimonial .wrap-arrow div img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.bg-custom {
+    background-color: #0D28A6 !important;
+}
+
+
+@media screen and (max-width: 500px){
+    nav ul {
+        display: none;
+    }
+    nav .icon-menu {
+        display: block;
+    }
+    .hero, .services {
+        flex-direction: column;
+    }
+    .hero .img-hero img, .services {
+        width: 100%;
+    }
+}
